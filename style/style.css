@@ -1,0 +1,599 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+/* hotel room font */
+@import url('https://fonts.googleapis.com/css2?family=The+Nautigal:wght@700&display=swap'); 
+
+/* testimonial-title */
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+body {
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* effect */
+.hotel-mandachi__background
+{
+    background-image: url('../img/banner_home-min.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -2022;
+
+    border-bottom: 1.5px solid orange;
+}
+.hotel-mandachi__effect {
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 100;
+}
+.hotel-mandachi__effect {
+    background-color: transparent;
+    background-image: linear-gradient(180deg,#303842 16%,#30384200 100%);
+    opacity: 1;
+    transition: background 0.3s,border-radius 0.3s,opacity 0.3s;
+}
+
+.hotel-mandachi {
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 17px;
+    line-height: 20px;
+}
+a:hover {
+    color: white;
+}
+
+i {
+    color: orange;
+}
+
+#suna-wapp {
+    position: fixed;
+    right: 0;
+    bottom: 50%;
+    background-color: #25D366;
+    padding: 7px 5px;
+    border-radius: 5px 0 0 5px;
+    cursor: pointer;
+}
+
+#suna-wapp span {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: white
+}
+#suna-wapp i {
+    color: white;
+    font-size: 1.5em;
+}
+
+.landing-page {
+    position: relative;
+    height: 100vh;
+    border-bottom: 1px solid orange;
+}
+
+.hotel-mandachi {
+    width: 100%;
+}
+
+.nav-bar {
+    width: 100%;
+    background-color: #303842;
+    padding: 10px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.hotel__navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+}
+/* navbar left-side content */
+.contact-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 200px;
+
+}
+.numbers p {
+    display: flex;
+    flex-direction: column;
+    font-size: 1em;
+}
+
+#contact-icon {
+    transform: rotateY(180deg);
+    font-size: 1.5em;
+}
+/* navbar right-side content */
+.pages {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.make-reservation {
+    background-color: orange;
+    padding: 10px 30px;
+    border: 0;
+    border-radius: 10px;
+    color: black;
+    letter-spacing: 1.5px;
+}
+/* second nav-bar */
+.second_nav-bar {
+    width: 100%;
+}
+.second_nav-bar_content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: transparent;
+}
+
+#home-btn-icon {
+    font-size: 1.5em;
+}
+.pages a {
+    text-align: center;
+    margin: 0 10px;
+}
+#dropdown-icon-reserver-pages {
+    margin-left: 10px;
+}
+#link-with-dropdown {
+    display: flex;
+}
+
+.lang-dropdown {
+    margin-right: 25px;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    color: orange;
+    transition: ease-in-out .3s;
+}
+.lang-dropdown:hover .dropdown{
+    display: block;
+}
+
+/* hotel summary & reservation */
+.hotel_summary-reservation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+
+    margin-top: 3%;
+
+    height: 500px;
+}
+
+#hotel-name {
+    font-size: 2.5em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white
+}
+.summary {
+    color: white;
+    width: 1000px;
+}
+.reservation-type {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 1000px;
+    padding: 10px;
+    text-transform: uppercase;
+}
+#pentru-receptie,
+#pentru-nunti_evenimente
+{
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: white;
+
+}
+
+#reservation-call {
+    background-color: orange;
+    color: white;
+    padding: 15px 30px;
+    border: 0;
+    border-radius: 5px;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+}
+#reservation-icon {
+    background-color: white;
+    padding: 3px;
+    border: 0;
+    border-radius: 5px;
+}
+
+.reservation {
+    width: 70%;
+}
+
+.form-input {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.form-input input {
+    margin:0 5px;
+    border: 2px solid orange;
+    border-radius: 5px;
+}
+
+.sub-title {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+}
+
+.form-input {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+}
+
+#rezerva-acum {
+    background-color: orange;
+    transform: scale(1.45);
+    margin-left: 50px;
+    border: 0;
+    color: black;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: .3s ease-in-out;
+}
+#rezerva-acum:hover {
+    color: white;
+}
+
+/* hotel reward */
+.hotel-reward {
+    display: flex;
+    justify-content: center;
+
+    text-align: center;
+}
+.reward {
+    margin-top: 5%;
+    width: 80%;
+    margin-bottom: 5%;
+}
+
+.reward-logo {
+    border: 1px solid orange;
+    border-radius: 5px;
+    padding: 20px;
+}
+.reward-logo img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 5px;
+}
+
+.reward-text-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.reward-info {
+    width: 70%;
+    margin-left: 10px;
+}
+#reward-text {
+    color: black;
+}
+/* hotel rooms */
+.hotel-rooms {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+.rooms {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.room-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#room-camere {
+    text-transform: uppercase;
+    font-size: 2em;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+}
+#room-hr {
+    border: 2px solid orange;
+    border-radius: 5px;
+    width: 1250px;
+}
+
+#about-room {
+    font-size: 1.25em;
+    max-width: 800px;
+}
+
+.hotel-rooms {
+    display: grid;
+    grid-template-columns: repeat(3, .1fr);
+
+}
+.room {
+    background-image: url('../img/hotel.jpg');
+    background-position: top;
+    background-size: 100% 50%;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column-reverse;
+
+    margin: 20px;
+    width: 300px;
+    height: 300px;
+
+    transition: ease-in-out .3s;
+}
+.room:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.room-info {
+    margin-bottom: 20%;
+    font-size: 2.5em;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    font-family: 'The Nautigal', cursive;
+}
+
+.hotel-services {
+    background-color: #303842;
+    width: 100%;
+    margin-top: 5%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.services {
+    width: 80%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    align-items: center;
+    height: 750px;
+}
+#service-title {
+    color: white;
+    font-size: 2em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+#service-text {
+    color: white;
+    max-width: 700px;
+}
+.services-items{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: ease-in-out .3s;
+}
+.item:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.img{
+    width: 80%; 
+    margin: 0 10px;
+}
+
+
+.text {
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    font-weight: 600;
+}
+.service-photo {
+    width:  300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* testimonials */
+
+.hotel-testimonials {
+    width: 100%;
+    margin: 5% 0;
+
+    display: flex;
+    justify-content: center;
+
+    height: 300px;
+}
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+
+    width: 70%;
+
+    border: 1px solid orange;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.testimonial-title {
+    font-size: 4em;
+    font-family: 'Secular One', sans-serif;
+}
+
+.testimonials-content,
+.testimonials-by {
+    font-size: 1.25em;
+}
+
+/* footer */
+.footer-content {
+    background-color: #303842;
+    display: flex;
+    justify-content: center;
+
+    height: 200px;
+}
+
+.content {
+    width: 80%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.footer-link {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-social i {
+    color: black;
+}
+
+.footer-social-links {
+    display: inline-flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    background-color: white;
+    width: 35px;
+    height: 35px;
+    border: 0;
+    border-radius: 50%;
+}
+.footer-social a {
+    border: 0;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 70%;
+    line-height: 1.6;
+}
+
+.title {
+    color: orange;
+    text-transform: uppercase;
+}
+
+/* mobile */
+@media screen and (max-width: 600px) { 
+    .hotel-mandachi__background {
+        background-image: url('../img/banner_home-min.jpg');
+        background-color: #020101BD;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        width: 100%;
+        top: 0;
+        left: 0;
+        position: absolute;
+    }
+    .hotel__navbar {
+        display: none;
+    }
+}
+/* tablet */
+@media screen and (max-width: 768px) {
+
+}
+/* laptop */
+@media screen and (max-width: 992px) {
+
+}
+/* large-screen */
+@media screen and (max-width: 1200px) {
+
+}
